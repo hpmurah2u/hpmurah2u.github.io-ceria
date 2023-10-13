@@ -18,7 +18,7 @@ player.configure({
   drm: {
     clearKeys: {
       // 'key-id-in-hex': 'key-in-hex',
-       'e76e86bd70f0aa82c94b38d82953dd10': '26a6ef5c1c56182a5314b79215b8d06d'
+       'b6e60ca0d28e8f97395f07b4e2e53a10': '0f0ea6c3543c29d7f513eb886eb74f88'
     }
   }
 });
@@ -27,7 +27,7 @@ window.player = player;
 window.ui = ui; 
 player.addEventListener('error', onPlayerErrorEvent); 
 controls.addEventListener('error', onUIErrorEvent); 
-try{await player.load('https://linearjitp-playback.astro.com.my/dash-wv/linear/2408/manifest.mpd'); 
+try{await player.load('https://linearjitp-playback.astro.com.my/dash-wv/linear/2606/default.mpd'); 
 console.log('The video has now been loaded!');} catch (error) {onPlayerError(error);}} 
 function onPlayerErrorEvent(errorEvent) {onPlayerError(event.detail);} 
 function onPlayerError(error) {console.error('Error code', error.code, 'object', error);} 
